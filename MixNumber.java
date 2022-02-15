@@ -13,8 +13,8 @@ class MixNumber {
 			for(int i=0; i<numbers.length; i++) {
 				int n= (int)(Math.random()*100); 
 				int tmp= numbers[n];
-				numbers[n]= numbers[0];
-				numbers[0]= tmp;
+				numbers[n]= numbers[i];
+				numbers[i]= tmp;
 			}
 			System.out.println(Arrays.toString(numbers)); // 채워진 값 출력
 	}
